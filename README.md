@@ -5,10 +5,7 @@
 ## Agenda
 
 1. Hello, Devmeetings
-2. Speed dating😘 
-
-   > ten rounds, each takes 2 minutes: pick a random person, say hello, for 1 minute talk about yourself and your experience, listen for the next 60 seconds
-
+2. Speed dating😘 \(don't worry\)
 3. Pick a buddy and sit together    
 4. Typescript
 5. Intro to React

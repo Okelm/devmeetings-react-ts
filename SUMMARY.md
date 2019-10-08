@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Devmeeting React + Typescript](README.md)
+* [Speed dating](speed-dating.md)
 * [Typescript](typescript/README.md)
   * [It's just JavaScript](typescript/its-just-javascript.md)
   * [Basic types](typescript/basic-types.md)

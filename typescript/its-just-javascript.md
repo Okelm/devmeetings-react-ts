@@ -48,22 +48,20 @@ What's the point then? Let's [take a look](https://codesandbox.io/embed/typescri
 ## Benefits of TypeScript
 
 * type safety \(duh...\)
-* your editor get's smarter
-* no need for as many unit tests
-* almost no entry cost if you know JS already
+* your editor gets smarter
+* no need for as many unit tests as you need now
+* almost no entry cost if you already know JS 
 * most \(?\) of the latest JS features
 
 ## By the way
 
-During this workshop we'll be using the latest version \(`3.6.2`\) that was installed by `create-react-app` when creating a new project.
+During this workshop we'll be using the latest version of TypeScript \(`3.6.3`\) that has been installed with `create-react-app` on project creation.
 
-If you didn't create a project yet, now's the last chance, here's what to do:
+If you haven't created a project yet, now's the last chance, here's what to do:
 
 ```bash
-npm i -g create-react-app
-create-react-app react-ts-devmeeting --typescript
-cd react-ts-devmeeting
-npm start
+npx create-react-app react-ts-devmeeting --typescript
+cd react-ts-devmeeting && npm start
 ```
 
 ### Resources
