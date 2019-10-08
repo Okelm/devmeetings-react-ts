@@ -1,4 +1,4 @@
-# Functions
+# Typing functions
 
 When declaring a function we can type both the arguments and the return value:
 
@@ -33,11 +33,11 @@ const subtract: BinaryOperator = (a, b) => a - b;
 
 One type is particularly useful with functions is `void`: to signify that nothing will be returned from the function:
 
-```
+```text
 function log(message): void {
     console.log(message);
 }
-``` 
+```
 
 ## Optional and default arguments
 
@@ -59,4 +59,5 @@ function complete(success: boolean = true): void {
 
 ### Resources
 
-- [Handbook: Functions](https://www.typescriptlang.org/docs/handbook/functions.html)
+* [Handbook: Functions](https://www.typescriptlang.org/docs/handbook/functions.html)
+

@@ -1,9 +1,8 @@
-# Generics
+# Generic types
 
 [![Edit dazzling-sun-8cl98](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/dazzling-sun-8cl98?fontsize=14)
 
-Generic types are like functions for type declarations the let you pass some arguments (other types) later.
-This is a (part of) simple [linked list](https://en.wikipedia.org/wiki/Linked_list) implementation:
+Generic types are like functions for type declarations the let you pass some arguments \(other types\) later. This is a \(part of\) simple [linked list](https://en.wikipedia.org/wiki/Linked_list) implementation:
 
 ```typescript
 type ListNode = {
@@ -14,13 +13,13 @@ type ListNode = {
 function add(head: ListNode, value: any): ListNode {
   const newElement: ListNode = { value, next: null };
   let current: ListNode = head;
-  
+
   while (current.next) {
       current = current.next;
   }
-  
+
   current.next = newElement;
-  
+
   return current;
 }
 ```
@@ -74,18 +73,19 @@ function makeTuple<T>(a: T, b: T): [T, T] {
     return [a, b];
 }
 ```
+
 Great thing about generic functions is that TypeScript is actually quite smart about them. This obviously works as expected:
 
 ```typescript
 makeTuple<number>(1, 20);
 ```
 
-But TypeScript is also to guess the type `T` based on the first argument it gets. 
+But TypeScript is also to guess the type `T` based on the first argument it gets.
+
 ```typescript
 makeTuple("Hello", "Devmeetings")
 makeTyple("Hello", 13) // error
 ```
-
 
 Let's rewrite the `add` function from previous example:
 
@@ -93,13 +93,13 @@ Let's rewrite the `add` function from previous example:
 function add<T>(head: ListNode<T>, value: T): ListNode<T> {
   const newElement: ListNode<T> = { value, next: null };
   let current: ListNode<T> = head;
-  
+
   while (current.next) {
       current = current.next;
   }
-  
+
   current.next = newElement;
-  
+
   return current;
 }
 
@@ -110,5 +110,6 @@ add(head, "That's illegal!"); // error
 
 ### Resources
 
-- [TypeScript Deep Dive: Generics](https://basarat.gitbooks.io/typescript/docs/types/generics.html)
-- [Handbook: Generics](https://www.typescriptlang.org/docs/handbook/generics.html)
+* [TypeScript Deep Dive: Generics](https://basarat.gitbooks.io/typescript/docs/types/generics.html)
+* [Handbook: Generics](https://www.typescriptlang.org/docs/handbook/generics.html)
+

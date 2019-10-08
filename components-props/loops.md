@@ -1,7 +1,6 @@
 # Loops in JSX
 
-More often than not we'll be dealing with lists and collections and not just simple singular items. 
-That means we'll need to iterate over data, but there's no way to use `for` loops in JSX. Let's use `.map`.
+More often than not we'll be dealing with lists and collections and not just simple singular items. That means we'll need to iterate over data, but there's no way to use `for` loops in JSX. Let's use `.map`.
 
 ```jsx
 const App: React.FC = () => {
@@ -40,16 +39,15 @@ const App: React.FC = () => {
 }
 ```
 
-Overall, quite straightforward: there's an array of items, over which we iterate using `.map` and return some JSX for each element.
-Similar to using components, each piece of JSX returned by the `.map` transformation must have exactly one root element.
+Overall, quite straightforward: there's an array of items, over which we iterate using `.map` and return some JSX for each element. Similar to using components, each piece of JSX returned by the `.map` transformation must have exactly one root element.
 
-There's also the `key` property on the root element of each product. This not *strictly* required (will work, React will just complain),
-but it allows React to easily distinguish between elements during the reconcilation process. Should be unique for each element in the array.
+There's also the `key` property on the root element of each product. This not _strictly_ required \(will work, React will just complain\), but it allows React to easily distinguish between elements during the reconcilation process. Should be unique for each element in the array.
 
-### Resources
+## Resources
 
-- [Lists and keys](https://reactjs.org/docs/lists-and-keys.html)
-- [Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-- [Reconcilation](https://reactjs.org/docs/reconciliation.html)
-- [Index as a key is an anti-pattern](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318)
-- [The significance of React keys - a visual explanation](https://dev.to/jtonzing/the-significance-of-react-keys---a-visual-explanation--56l7)
+* [Lists and keys](https://reactjs.org/docs/lists-and-keys.html)
+* [Array.prototype.map\(\)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+* [Reconcilation](https://reactjs.org/docs/reconciliation.html)
+* [Index as a key is an anti-pattern](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318)
+* [The significance of React keys - a visual explanation](https://dev.to/jtonzing/the-significance-of-react-keys---a-visual-explanation--56l7)
+

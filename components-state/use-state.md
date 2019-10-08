@@ -1,8 +1,8 @@
-# State
+# Components with internal state
 
 Let's do a little bit more with the button. Let's make it count clicks.
 
-![count clicks](/assets/click_count.gif)
+![count clicks](../.gitbook/assets/click_count.gif)
 
 ## Naive implementation
 
@@ -46,6 +46,7 @@ const Clicker: React.FC = () => {
 
 ## Resources
 
-- [Docs: State](https://reactjs.org/docs/faq-state.html)
-- [Docs: `useState` hook](https://reactjs.org/docs/hooks-state.html)
-- [`useState` hook examples](https://daveceddia.com/usestate-hook-examples/)
+* [Docs: State](https://reactjs.org/docs/faq-state.html)
+* [Docs: `useState` hook](https://reactjs.org/docs/hooks-state.html)
+* [`useState` hook examples](https://daveceddia.com/usestate-hook-examples/)
+

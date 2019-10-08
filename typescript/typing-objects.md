@@ -1,4 +1,4 @@
-# Object types
+# Typing objects
 
 Typing objects is just as simple as typing primitive values:
 
@@ -77,12 +77,11 @@ interface IPen extends IProduct {
 }
 ```
 
-There are some very minor differences between `type aliases` and `interfaces`. 
-In general `interfaces` seem to be more suitable for object-oriented code with classes.
-
+There are some very minor differences between `type aliases` and `interfaces`. In general `interfaces` seem to be more suitable for object-oriented code with classes.
 
 ### Resources
 
-- [Handbook: Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
-- [Handbook: Type aliases](https://www.typescriptlang.org/docs/handbook/advanced-types.html#type-aliases)
-- [Interface vs Type alias](https://medium.com/@martin_hotell/interface-vs-type-alias-in-typescript-2-7-2a8f1777af4c)
+* [Handbook: Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
+* [Handbook: Type aliases](https://www.typescriptlang.org/docs/handbook/advanced-types.html#type-aliases)
+* [Interface vs Type alias](https://medium.com/@martin_hotell/interface-vs-type-alias-in-typescript-2-7-2a8f1777af4c)
+

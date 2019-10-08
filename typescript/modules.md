@@ -42,14 +42,14 @@ Importing code installed via npm is done by specifying the package name instead 
 import React from "react"
 ```
 
-Some (usually older) packages have no default export and have to be imported as a group of properties;
+Some \(usually older\) packages have no default export and have to be imported as a group of properties;
 
 ```typescript
 import * as _ from "underscore"
 ```
 
-
 ### Resources
 
-- [Modules](https://www.typescriptlang.org/docs/handbook/modules.html)
-- [`export default` considered harmful](https://basarat.gitbooks.io/typescript/docs/tips/defaultIsBad.html)
+* [Modules](https://www.typescriptlang.org/docs/handbook/modules.html)
+* [`export default` considered harmful](https://basarat.gitbooks.io/typescript/docs/tips/defaultIsBad.html)
+

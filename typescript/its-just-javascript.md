@@ -1,21 +1,21 @@
-# All JavaScript is valid TypeScript
+# It's just JavaScript
 
 Here's some TypeScript code:
 
 ```typescript
 const array = [1, 2, 3, 4, 5]
- 
+
 function squareNumber(num) {
     return num * num
 }
- 
+
 const squared = array.map(squareNumber)
- 
+
 squared // [1, 4, 9, 16, 25]
 array // [1, 2, 3, 4, 5]
- 
+
 const doubled = array.map(num => num * 2); // [2, 4, 6, 8, 10]
- 
+
 const books = [
     {
         name: "JavaScript: The Definitive Guide",
@@ -47,17 +47,18 @@ What's the point then? Let's [take a look](https://codesandbox.io/embed/typescri
 
 ## Benefits of TypeScript
 
-- type safety (duh...)
-- your editor get's smarter
-- no need for as many unit tests
-- almost no entry cost if you know JS already
-- most (?) of the latest JS features
+* type safety \(duh...\)
+* your editor get's smarter
+* no need for as many unit tests
+* almost no entry cost if you know JS already
+* most \(?\) of the latest JS features
 
 ## By the way
 
-During this workshop we'll be using the latest version (`3.6.2`) that was installed by `create-react-app` when creating a new project.
+During this workshop we'll be using the latest version \(`3.6.2`\) that was installed by `create-react-app` when creating a new project.
 
 If you didn't create a project yet, now's the last chance, here's what to do:
+
 ```bash
 npm i -g create-react-app
 create-react-app react-ts-devmeeting --typescript
@@ -66,4 +67,6 @@ npm start
 ```
 
 ### Resources
-- [Typescript playground](http://www.typescriptlang.org/play/)
+
+* [Typescript playground](http://www.typescriptlang.org/play/)
+

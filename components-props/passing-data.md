@@ -1,4 +1,4 @@
-# Passing data to components
+# Passing data to a component
 
 Let's take a look at the `App` component we've created earlier:
 
@@ -9,11 +9,11 @@ const App: React.FC = () => {
       description: `Since 1996, JavaScript: The Definitive Guide...`,
       price: 28.89
     }
-    
+
     return (
         <section>
             <h1>Hello DevMeetings!</h1>
-    
+
             <div>
                 <header>{ product.name }</header>
                 <p>
@@ -26,11 +26,11 @@ const App: React.FC = () => {
 }
 ```
 
-It's simple, but there still is *some* complexity: 
+It's simple, but there still is _some_ complexity:
 
-- some (primitive) state inside, 
-- title displayed
-- product displayed
+* some \(primitive\) state inside, 
+* title displayed
+* product displayed
 
 First target for extraction should be the code that is responsible for displaying a product.
 
@@ -52,18 +52,16 @@ const SingleProduct: React.FC = () => {
 }
 ```
 
-The problem here is of course that the `product` variable is in the `App` component and undefined in the `SingleProduct` component. 
-We need to be able to pass data from a parent (`App`) to the child (`SingleProduct`). If we were talking about functions, and not components it would look more or less like that:
+The problem here is of course that the `product` variable is in the `App` component and undefined in the `SingleProduct` component. We need to be able to pass data from a parent \(`App`\) to the child \(`SingleProduct`\). If we were talking about functions, and not components it would look more or less like that:
 
 ```typescript
-
 function SingleProduct(product: Product) {
     /* ... */
 }
 
 function App() {
     const product = { /* ... */ };
-    
+
     SingleProduct(product);
 }
 ```
@@ -72,13 +70,13 @@ This is a terrible piece of pseudo-code, but it illustrates the idea: we want to
 
 ## Props
 
-The proper way of passing data down the component tree (from parent to child) is through props. They embody the same concept as function above, just use different syntax:
+The proper way of passing data down the component tree \(from parent to child\) is through props. They embody the same concept as function above, just use different syntax:
 
 ```jsx
-<Component foo={42} bar={"Hello, Devmeetings"} /> 
+<Component foo={42} bar={"Hello, Devmeetings"} />
 ```
 
-That's it - we just passed two pieces of data into the `Component`: `foo` that is equal to `42`, and `bar`: the string `"Hello, Devmeetings"`. 
+That's it - we just passed two pieces of data into the `Component`: `foo` that is equal to `42`, and `bar`: the string `"Hello, Devmeetings"`.
 
 Let's get back to the function analogy for a second. Defining it like this would make no sense:
 
@@ -134,10 +132,11 @@ const SingleProduct: React.FC<SingleProductProps> = ({ product }) => {
 
 Much better! With couple of simple changes, we gained:
 
-- understanding that the `React.FC` is a generic type we got better type safety and IDE support,
-- by destructuring the `props` argument simplifies code inside the component,
-- by extracting the `SingleProductProps` into a type we got a minimalistic documentation
+* understanding that the `React.FC` is a generic type we got better type safety and IDE support,
+* by destructuring the `props` argument simplifies code inside the component,
+* by extracting the `SingleProductProps` into a type we got a minimalistic documentation
 
 ### Resources
 
-- [Components and props](https://reactjs.org/docs/components-and-props.html)
+* [Components and props](https://reactjs.org/docs/components-and-props.html)
+

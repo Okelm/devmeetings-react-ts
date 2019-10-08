@@ -1,4 +1,4 @@
-# Context
+# Using context
 
 The context API is designed to contain data that is common for a number of components in the application. Data in top-level context can be considered global.
 
@@ -12,7 +12,7 @@ import React from "react";
 export const MessageContext = React.createContext("Hello!")
 ```
 
-The `createContext` method takes an optional default value and returns the context object that contains both the `provider` (write data) and `consumer` (read data) bits:
+The `createContext` method takes an optional default value and returns the context object that contains both the `provider` \(write data\) and `consumer` \(read data\) bits:
 
 ```typescript
 interface Context<T> {
@@ -64,6 +64,7 @@ function App() {
 
 ### Resources
 
-- [Docs: Context](https://reactjs.org/docs/context.html)
-- [Docs: `useContext` hook](https://reactjs.org/docs/hooks-reference.html#usecontext)
-- [How the `useContext` Hook Works](https://daveceddia.com/usecontext-hook/)
+* [Docs: Context](https://reactjs.org/docs/context.html)
+* [Docs: `useContext` hook](https://reactjs.org/docs/hooks-reference.html#usecontext)
+* [How the `useContext` Hook Works](https://daveceddia.com/usecontext-hook/)
+

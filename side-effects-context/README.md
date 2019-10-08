@@ -1,1 +1,2 @@
-# Handling side-effects and "global" state
+# Side-effects and context
+
