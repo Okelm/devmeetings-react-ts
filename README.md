@@ -1,6 +1,6 @@
 # Devmeeting React + Typescript
 
-## Link to this page: [http://bit.ly/devmeeting-react-ts](http://bit.ly/devmeeting-react-ts)
+## Link to this page: [http://tiny.cc/react\_ts](http://tiny.cc/react_ts)
 
 ## Agenda
 
@@ -13,5 +13,5 @@
 7. Stateful components
 8. Side-effects and context
 
-Should take until 15 - 15:30. There will be short breaks between modules.
+The workshop finishes by 15:30. There are short breaks between modules.
 
