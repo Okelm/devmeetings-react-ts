@@ -2,19 +2,27 @@
 
 A well-written React app will have two "types" of components: **Containers**, often called **smart** and **Presentational** called **dumb**.
 
-Before we get to that, let's introduce a couple of concepts:
+Before we get to that, let's introduce a couple of concepts by answering these questions:
 
-## Side-effect
+* what is a pure function?
+* what is a side effect?
+* what are examples of side effects in frontend applications
 
-A side-effect of a function is anything the function does that affects any part of the system outside of the function scope.
+.
 
-* changing a value of a local variable is **not** a side-effect
-* changing a value of a global variable is a side-effect
-* making a network request is a side-effect
-* changing the DOM is a side-effect
-* logging to a console is a side-effect
-* registering a event listener is a side-effect
-* using external code might be a side-effect
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
 
 ## Pure function
 
@@ -42,6 +50,23 @@ const fetchBooks = () => getBooks().then(doStuffWithBooks)
 
 const sleep = time => new Promise(resolve => setTimeout(resolve, time))
 ```
+
+## Side-effect
+
+A side-effect of a function is anything the function does that affects any part of the system outside of the function scope.
+
+Examples of side effects are:
+
+* changing a value of a global variable
+* making a network request
+* changing the DOM
+* logging to a console
+* registering a event listener
+* using external code might be a side-effect
+
+What is not a side effect:
+
+* changing a value of a local variable
 
 ## Dumb components
 

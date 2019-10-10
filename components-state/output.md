@@ -1,8 +1,6 @@
 # Talking to a parent component
 
-We learned earlier that parent passes data to a child component by using `props`. What about the other way around? Like a function, the child has no idea who called it and so it cannot pass data to the caller \(with exception of returning the data\).
-
-Solution is the same for both functions and React components: let's pass a callback as one of the arguments.
+We've learned earlier that a parent passes data to a child component by `props`. What about passing data from a child to a parent? The simplest way for child to talk to a parent is to call a function given from that parent:
 
 ```jsx
 type CounterProps = { increment: () => void; decrement: () => void; }

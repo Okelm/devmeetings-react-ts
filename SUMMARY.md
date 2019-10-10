@@ -32,4 +32,7 @@
   * [Prop drilling](side-effects-context/prop-drilling.md)
   * [Using context](side-effects-context/context.md)
   * [Tasks](side-effects-context/tasks.md)
+* [What's next](whats-next/README.md)
+  * [Styling](whats-next/styling.md)
+  * [State Management](whats-next/state-management.md)
 

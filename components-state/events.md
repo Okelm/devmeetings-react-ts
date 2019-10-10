@@ -1,6 +1,6 @@
 # Handling events
 
-Let's build a simple button that does literally nothing.
+Let's build a simple button that does nothing besides logging to console:
 
 ![clicker](../.gitbook/assets/clicker.gif)
 
@@ -18,21 +18,21 @@ const Clicker: React.FC = () => {
 }
 ```
 
-In React, all event listeners are attached to an element via `onEventName` property. This is similar to veeery old school JavaScript, but uses `camelCase` instead.
+In React, all event listeners are attached to an element via `onEventName` property. This is similar to veeery old school JavaScript, but uses `camelCase`.
 
 ## Pass, not call
 
-It's important to remember that we are passing the callback as a prop, not calling it. This is bad:
+It's important to remember that we are passing the callback as a prop, not calling it:
 
 ```jsx
 <button onClick={handleButtonClick()}>Click me!</button>
 ```
 
-The function will be called once per render, and React will probably throw an error.
+As long as we don't intent to call this function each time a component is rerendered.
 
 ## Fake event
 
-The event received in the callback is slightly different than expected. For starters, it's imported from React instead of just being in global namespace. In fact, it's an instance of a [Synthetic Event](https://reactjs.org/docs/events.html#overview) - this is quite important for React internals, but for us it's just there to avoid a gotcha moment.
+The event received in the callback is slightly different than expected. For starters, it's imported from React instead of just being in global namespace. In fact, it's an instance of the [Synthetic Event](https://reactjs.org/docs/events.html#overview) - this is quite important for React internals, but for us it's just there to avoid a gotcha moment.
 
 ### Resources
 

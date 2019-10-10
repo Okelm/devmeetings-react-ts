@@ -6,13 +6,13 @@
 
 ## 2. Add ability to filter contacts by name
 
-## 3. :star: Add button that keeps the contact expanded
+## 3. ⭐ Add button that keeps the contact expanded
 
-## 4. :star: Filter by all fields, not just name
+## 4.  ⭐  Filter by all fields, not just name
 
-## 5. :star: Make filtering case insensitive
+## 5.  ⭐  Make filtering case insensitive
 
-## 6. :fire: Add button that sorts contacts by name; clicking the button should toggle sort direction
+## 6. 🔥 Add button that sorts contacts by name; clicking the button should toggle sort direction
 
-## 7. :fire: Add an icon the the button \(↑/↓\) to indicate sorting direction.
+## 7.  🔥  Add an icon the the button \(↑/↓\) to indicate sorting direction.
 

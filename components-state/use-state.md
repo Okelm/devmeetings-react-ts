@@ -21,7 +21,7 @@ const Clicker: React.FC = () => {
 
 [![Edit bad clicker](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/working-clicker-lri99?fontsize=14)
 
-Boom, done. Except is doesn't work, because React has no idea that it should rerender the `Clicker` component or keep track of the `clicks` variable.
+Boom, done. Except it doesn't work, because React has no idea that it should rerender the `Clicker` component or keep track of the `clicks` variable.
 
 ## Using the `useState` hook
 
