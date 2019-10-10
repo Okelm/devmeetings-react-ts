@@ -1,4 +1,4 @@
-# First component
+# The first component
 
 Here's probably the simplest component we can write, in all it's glory:
 
@@ -23,7 +23,7 @@ It doesn't do much, but still there's a couple of things to notice:
 * `const App: React.FC = () => { ... }` - it takes no arguments
 * `export default App;` is exported from the file
 
-## Single product component
+## A single product component
 
 ![single product](../.gitbook/assets/single_product.png)
 
@@ -40,13 +40,12 @@ const App: React.FC = () => {
     return (
         <section>
             <h1>Hello DevMeetings!</h1>
-
             <div>
-                <header>{ product.name }</header>
+                <header>{product.name}</header>
                 <p>
-                    { product.description }
+                    {product.description}
                 </p>
-                <span>{ product.price }$</span>
+                <span>{product.price}$</span>
             </div>
         </section>
     )

@@ -15,18 +15,18 @@ const App: React.FC = () => {
             <h1>Hello DevMeetings!</h1>
 
             <div>
-                <header>{ product.name }</header>
+                <header>{product.name}</header>
                 <p>
-                    { product.description }
+                    {product.description}
                 </p>
-                <span>{ product.price }$</span>
+                <span>{product.price}$</span>
             </div>
         </section>
     )
 }
 ```
 
-It's simple, but there still is _some_ complexity:
+It's simple, but there is still _some_ complexity:
 
 * some \(primitive\) state inside, 
 * title displayed
@@ -56,17 +56,25 @@ The problem here is of course that the `product` variable is in the `App` compon
 
 ```typescript
 function SingleProduct(product: Product) {
-    /* ... */
+    return /* ... */
 }
 
 function App() {
     const product = { /* ... */ };
 
-    SingleProduct(product);
+    return SingleProduct(product);
 }
 ```
 
-This is a terrible piece of pseudo-code, but it illustrates the idea: we want to be able to pass arguments to the `SingleProduct` function.
+This illustrates the idea: we want to be able to pass arguments to the `SingleProduct` function.
+
+```typescript
+function App() {
+    const product = { /* ... */ };
+
+    return <SingleProduct product={product}/>;
+}
+```
 
 ## Props
 
@@ -86,7 +94,7 @@ function Component(foo: number, bar: string) {
 }
 ```
 
-In this case we are entirely reliant on the order of arguments, and their names don't matter event though we typed them. This is much better:
+In this case we are entirely depended on the order of arguments, and their names don't matter event though we typed them. This is much better:
 
 ```typescript
 function Component(props: { foo: number; bar: string; }) {

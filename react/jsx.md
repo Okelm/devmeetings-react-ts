@@ -12,7 +12,7 @@ becomes this:
 const workshopTitle = React.createElement('p', {}, "Devmeeting React + Typescript");
 ```
 
-This comes with couple of problems or gotchas, first of which is why you need to import React in every component file, even when you don't reference it directly. This kind of goes away when using TypeScript, because more than likely the component will be typed with `React.FC`, which makes it harder to forget to import React at all.
+This comes with a couple of problems or gotchas, first of which is why you need to import React in every component file, even when you don't reference it directly. This kind of goes away when using TypeScript, because more than likely the component will be typed with `React.FC`, which makes it harder to forget to import React at all.
 
 ## Almost like HTML
 
@@ -32,7 +32,7 @@ Other differences:
 * all elements can be self closing, if they have no children \(so `<div />` is legal\),
 * `style` attribute takes and object of css-like properties \(`{ backgroundColor: blue }`\)
 
-## Interpolation
+## JS in JSX
 
 Everything that goes between `{` and `}` will be evaluated as an JavaScript expression:
 
@@ -42,14 +42,38 @@ const workshop = {
     name: "Devmeeting React + Typescript"
 };
 
-<h2 className={titleClass}>{ workshop.name }</h2>
+<h2 className={titleClass}>{workshop.name}</h2>
 ```
 
-That also means that:
+Yet not everything is possible, you can do quite a lot when you use these:
 
-* `if` _statement_ is not allowed, but a ternary _expression_ \(`condition ? whenTrue : whenFalse`\) is OK
-* `function` _statement_ cannot be used, but arrow function _expression_ can
+#### Ternany operator
+
+If _statement_ is not allowed, but a ternary _expression_ \(`condition ? whenTrue : whenFalse`\) is OK
+
+```jsx
+<h2 className={titleClass}>{isEnabled ? "Confirmed" : "Try again"}</h2>
+```
+
+#### Functions
+
+`function` _statement_ cannot be used, but arrow function _expression_ can
+
+```jsx
+<SomeComponent>{amount => <Amount amount={amount}>}</h2>
+```
+
+#### Loops
+
 * `for` loops are _statements_, calling `.map` is an _expression_
+
+```jsx
+<div>
+    {currencies.map(currency => <Currency />)}
+</div>
+```
+
+
 
 ## Gotcha with TypeScript
 
