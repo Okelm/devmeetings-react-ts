@@ -1,6 +1,6 @@
 # Tasks
 
-## 1. Help us out and fill out the [survey](https://docs.google.com/forms/d/e/1FAIpQLSeh4hiCv45-umLv5eJIPlz3xTCi0j-K4FE8i9PFf6-AaEaHcA/viewform)
+## 1. Help us out and fill out the [survey](http://bit.ly/ReactKrk%20)
 
 > It's anonymous
 
