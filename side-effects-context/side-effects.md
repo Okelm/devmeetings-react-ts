@@ -1,10 +1,22 @@
 # Side-effects
 
-For side-effects other than simply changing the application state we'll be using the `useEffect` hook. There's three parts to each `useEffect` hook: `setup`, `cleanup`, and `dependencies`. Cleanup and dependencies are optional.
+For side-effects other than simply changing the application state we'll be using the `useEffect` hook. There's three parts to each `useEffect` hook: `setup`, `cleanup`, and `dependencies`where `cleanup` and `dependencies`are optional.
+
+
+
+```typescript
+useEffect(
+    () => {
+        // body of a setup function
+        return () => {} // cleanup function
+    },
+    [] // dependency array
+)
+```
 
 ## Setup
 
-The function provided is the `setup` of the hook. This is where all the hook's logic is.
+The setup is where all the hook's logic is placed.
 
 ```typescript
 useEffect(() => {
@@ -15,9 +27,9 @@ useEffect(() => {
 })
 ```
 
-Hook written like that will run for every render of the component its used in, and create a myriad of event listeners.
+Hook written like that will run on each render, and create a myriad of event listeners.
 
-> :warning: In fact this code will break your browser.
+> In fact this code will break your browser.
 
 ## Cleanup
 
@@ -39,7 +51,7 @@ useEffect(() => {
 })
 ```
 
-> :warning: In fact this code will **probably** break your browser.
+> ⚠ In fact this code will **probably** break your browser.
 
 ## Dependencies
 
@@ -61,7 +73,7 @@ useEffect(() => {
 }, [])
 ```
 
-Second argument to the `useEffect` function is the array of dependencies. Hook behavior changes depending what in it:
+Second argument to the `useEffect` function is the array of dependencies. Hook behavior changes depending what's in it:
 
 * `null` or `undefined`: the hook will run for every render
 * `[]` \(empty array\): the hook will run once, after the first render
