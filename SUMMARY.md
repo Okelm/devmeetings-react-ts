@@ -8,6 +8,7 @@
   * [Typing objects](typescript/typing-objects.md)
   * [Typing functions](typescript/typing-functions.md)
   * [Modules](typescript/modules.md)
+  * [Generics](typescript/generics.md)
   * [Tasks](typescript/tasks.md)
 * [Hello React](react/README.md)
   * [Quick look around](react/quick-look-around.md)

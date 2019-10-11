@@ -1,6 +1,6 @@
 # Tasks
 
-## 1. Help us out and fill out the [survey](http://bit.ly/RTS1409)
+## 1. Help us out and fill out the [survey](https://docs.google.com/forms/d/e/1FAIpQLSeh4hiCv45-umLv5eJIPlz3xTCi0j-K4FE8i9PFf6-AaEaHcA/viewform)
 
 > It's anonymous
 
@@ -16,11 +16,11 @@
 >
 > **Hint** use the `seed` option to get the same response with each request.
 
-## 4. :star: Create a dark theme for your app and a widget to change the theme
+## 4. ⭐ Create a dark theme for your app and a widget to change the theme
 
 > **Hint** the widget can be as simple as a `select` dropdown.
 
-## 5. :fire: Simulate querying and sorting on the server
+## 5. 🔥 Simulate querying and sorting on the server
 
 > **Hint** The API doesn't support querying or sorting, but this can be simulated on client side
 >
@@ -28,9 +28,9 @@
 >
 > **Hint** remember to cleanup pending requests if user keeps typing
 
-## 6. :fire: When filtering highlight the searched phrase in each contact
+## 6. 🔥 When filtering highlight the searched phrase in each contact
 
-## 7. :fire: It was all about Pokemon
+## 7. 🔥 It was all about Pokemon
 
 > Use the [Pokemon TCG API](https://pokemontcg.io/) and replace contacts with Pokemon
 
