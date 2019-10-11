@@ -47,7 +47,7 @@ What's the point then? Let's [take a look](https://codesandbox.io/embed/typescri
 
 ## Benefits of TypeScript
 
-* type safety \(duh...\)
+* type safety
 * your editor gets smarter
 * no need for as many unit tests as you need now
 * almost no entry cost if you already know JS 
