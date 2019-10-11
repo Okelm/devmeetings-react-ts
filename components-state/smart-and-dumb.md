@@ -6,7 +6,7 @@ Before we get to that, let's introduce a couple of concepts by answering these q
 
 * what is a pure function?
 * what is a side effect?
-* what are examples of side effects in frontend applications
+* what are examples of side effects in frontend applications?
 
 .
 

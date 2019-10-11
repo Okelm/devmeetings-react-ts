@@ -7,7 +7,6 @@
   * [Basic types](typescript/basic-types.md)
   * [Typing objects](typescript/typing-objects.md)
   * [Typing functions](typescript/typing-functions.md)
-  * [Generic types](typescript/generic-types.md)
   * [Modules](typescript/modules.md)
   * [Tasks](typescript/tasks.md)
 * [Hello React](react/README.md)
@@ -34,5 +33,6 @@
   * [Tasks](side-effects-context/tasks.md)
 * [What's next](whats-next/README.md)
   * [Styling](whats-next/styling.md)
+  * [Learning component's lifecycle](whats-next/learning-components-lifecycle.md)
   * [State Management](whats-next/state-management.md)
 

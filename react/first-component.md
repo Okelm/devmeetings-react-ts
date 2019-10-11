@@ -54,7 +54,7 @@ const App: React.FC = () => {
 export default App;
 ```
 
-* not exactly a best practice, but for now, the data is hardcoded inside of the component
+* not exactly the best practice, but for now, the data is hardcoded inside of the component
 * There's plenty of elements to render, but a component must always return exactly one element or null
 
 ### Resources

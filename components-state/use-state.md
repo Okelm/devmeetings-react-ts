@@ -42,11 +42,23 @@ const Clicker: React.FC = () => {
 }
 ```
 
-[![Edit working clicker](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/stupefied-dawn-y5bdl?fontsize=14)
+### Rules of Hooks
+
+There are just two rules you have to remember to use Hooks properly:
+
+1. **Only Call Hooks at the Top Level**
+2. **Only Call Hooks from React Functions**
+
+Some people say there are just two rules but reality is that they exist to address problems with magic used to implement Hooks.
+
+They make using Hooks harder.
+
+### [![Edit working clicker](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/stupefied-dawn-y5bdl?fontsize=14)
 
 ## Resources
 
 * [Docs: State](https://reactjs.org/docs/faq-state.html)
 * [Docs: `useState` hook](https://reactjs.org/docs/hooks-state.html)
 * [`useState` hook examples](https://daveceddia.com/usestate-hook-examples/)
+* [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
 

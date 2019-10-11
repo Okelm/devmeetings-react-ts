@@ -2,7 +2,7 @@
 
 > **Hint**: CSS is not the main topic here. The priority is to complete as many tasks as you can, even if it means your app looks like crap.
 
-## 1. You'll only need `index.tsx`, `App.tsx`, and `react-app-env.d.ts` files. Remove all other files and unused code - including the component code form `App.tsx`.
+## 1. You'll only need `index.tsx`, `App.tsx` and `react-app-env.d.ts` files. Remove all other files and unused code - including the component code form `App.tsx`.
 
 ## 2. Create the `Contact` type
 
