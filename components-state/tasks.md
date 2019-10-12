@@ -4,7 +4,7 @@
 
 > **Hint** using state and a callback, not CSS.
 
-## 2. Add ability to filter contacts by name
+## 2. ⭐ Add ability to filter contacts by name
 
 ## 3. ⭐ Add button that keeps the contact expanded
 
